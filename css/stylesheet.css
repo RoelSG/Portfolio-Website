@@ -1,3 +1,6 @@
+body {
+    font-family: 'ankeregular';
+}
 .menuBtn {
   background-color: transparent;
   border: none;
@@ -15,19 +18,30 @@ md-toolbar h1 {
 md-toolbar {
     background-color: #222;   
 }
-md-sidenav {
+md-sidenav {  
+    font-weight: 400;
+    text-align: center;
+    min-width: 70%;
+    width: 70%;
+    color: white;
     background-color: #222;
+    height: calc(100% - 64px);
 }
 
+md-sidenav.md-locked-open {
+    text-align: left;
+    min-width: 150px;
+    width: 150px;
+}
 md-toolbar img {
-height: 50px;
+    height: 50px;
 }
 
 md-list .md-button {
-  color: inherit;
-  font-weight: 500;
-  text-align: left;
-  width: 100%;
+    color: inherit;
+    font-weight: 500;
+    text-align: left;
+    width: 100%;
 }
 .visuallyhidden {
   border: 0;
@@ -38,6 +52,18 @@ md-list .md-button {
   padding: 0; 
   position: absolute;
   width: 1px;
+}
+
+md-whiteframe {
+    background: #fff;
+    margin: 20px;
+    padding: 20px; 
+    max-width: 720px;
+    width: 100%;
+}
+
+#content {
+    height: calc(100%-64px);   
 }
 
 /* Using Data-URI converted from svg until <md-icon> becomes available 
